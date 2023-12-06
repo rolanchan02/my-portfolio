@@ -1,0 +1,328 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Poppins, sans-serif;
+    
+}
+
+.main-container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(7, 6, 6, 0.75),rgba(29, 73, 60, 0.75)), url(bgmap.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+.nav-bar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.logo{
+    font-size: 40px;
+    font-weight: bold;
+    color: hsl(215, 88%, 24%);
+    width: 120px;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+    
+}
+span{
+    color: coral;
+}
+
+.logo:hover{
+    color: #009688;
+}
+
+.nav-bar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+
+.nav-bar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.nav-bar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    margin: auto;
+    margin-left: 15%;
+    width: 500px;
+    max-width: 90%;
+    float: left;
+    
+}
+
+.payroll-logo{
+    padding: 20px 40px;
+    text-align: center; 
+    text-transform: uppercase;
+    color: rgb(239, 232, 232);
+    border-bottom: 2px solid black;
+    letter-spacing: 1.5rem;
+    background-color: #009688;
+    transition: all 0.5s ease 0s;
+    
+}
+
+.payroll-logo:hover{
+    color: #070707;
+}
+
+
+.inside{
+    width: 450px;
+    height: 650px;
+    background-color: hsl(0, 6%, 7%);
+    border-radius: 20px;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.30);
+    
+}
+.label{
+    display: block;
+    font-size: 18px;
+    padding: auto;
+    color: aliceblue;
+    transition: all 0.5s ease 0s;
+}
+.label:hover{
+    color: #009688;
+}
+.input-group{
+    font-size: 18px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.btnBack{
+    color: beige;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid #009688;
+    transition: all 0.5s ease 0s;
+    
+}
+.btnBack:hover{
+    background-color: #009688;
+}
+
+#CALCULATE{
+    color: beige;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid #009688;
+    transition: all 0.5s ease 0s;
+}
+#CALCULATE:hover{
+    background-color: #009688;
+}
+
+/* PayRoll style */
+.home-content{
+    margin: auto;
+    width: 600px;
+    max-width: 90%;
+}
+.home-template{
+    width: 500px;
+    height: 300px;
+    background-color: transparent;
+    text-align: center;
+    margin-top: 20%;
+    
+
+}
+.home-title{
+    color: rgb(196, 205, 43);
+    font-size: 50px;
+    letter-spacing: 0.2rem;
+    font-weight: 700;
+}
+.paragraph{
+    font-size: 18px;
+    letter-spacing: 0.1rem;
+    font-weight: 300;
+    color: lightgray;
+}
+.btn-GoTo{
+    margin: 40px;
+    width: 30%;
+    height: 43px;
+    border: none;
+    border-radius: 10px;
+    color: whitesmoke;
+    background-color: #009688;
+    transition: all 0.5s ease 0s;
+}
+.btn-GoTo:hover{
+    background-color: #376460;
+}
+
+.templateTwo{
+    float: right;
+    width: 500px;
+    margin-right: 15%;
+}
+
+.totalsalary{
+    width: 450px;
+    height: 650px;
+    background-color: hsl(0, 6%, 7%);
+    border-radius: 20px;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.30);
+}
+.titletotalSalary{
+    padding: 10px 40px;
+    text-align: center; 
+    text-transform: uppercase;
+    color: rgb(239, 232, 232);
+    border-bottom: 2px solid black;
+    letter-spacing: 0.5rem;
+    background-color: #009688;
+    transition: all 0.5s ease 0s;
+}
+
+.titletotalSalary:hover{
+    color: #070707;
+}
+
+.label2{
+    font-size: 18px;
+    margin-right: auto;
+    color: aliceblue;
+}
+
+.label3{
+    font-size: 18px;
+    color: aliceblue;
+}
+
+#infoH3{
+   
+    color: #009688;
+    text-transform: uppercase;
+}
+#incomeH3{
+   
+    color: #009688;
+    text-transform: uppercase;
+}
+#tdeductionH3{
+    
+    color: #009688;
+    text-transform: uppercase;
+}
+#totalH3{
+    color: #009688;
+    text-transform: uppercase;
+}
+#totalIncome{
+    font-size: 18px;
+    color: aliceblue;
+}
+
+.textValue{
+    width: 50px;
+    border-radius: 10px;
+}
+
+/* About Us*/
+.collection{
+    width: 100%;
+    display: block;
+    margin: 15px 15%;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+
+.gallery{
+    border: 1px solid #d4ddc8;
+    margin: 20px 0px;
+    border-radius: 11px;  
+    width: 40%;
+    height: 200px;
+    overflow: hidden;
+    background-color: #93adaa;
+    transition: all 0.3s ease 0s;
+    
+    
+}
+.Auh2{
+    font-size: 38px;
+    font-weight: bold;
+    font-family: Roboto, sans-serif;
+    color: #009688;
+}
+
+.gallery:hover{
+    background-color: #0e0f0f;
+    color: #f4efef;
+}
+
+.gallery img{
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    float: left;
+   
+}
+.gallery ul{
+    padding-left: 40%;
+    
+}
+
+.gallery ul li{
+    /* list-style-type: none; */
+    margin-bottom: 5px;
+    margin-left: -20px;
+    font-size: 18px;
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

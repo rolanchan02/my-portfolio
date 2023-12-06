@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayRoll</title>
+    <link rel="stylesheet" href="stilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        
+        <div class="nav-bar">
+            <h1 class="logo"><span>2F</span>ayRoll</h1>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="payroll.html">PayRoll</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+            </ul>
+        </div>
+        
+        <div class="content">
+           
+            
+            
+                
+
+                <div class="inside">
+                    <h1 class="payroll-logo">PayRoll</h1>
+                   
+                    <label class="label">Name of employee: </label>
+                    <input type="text" id="Fname" class="input-group" ><br>
+                    
+                    <label class="label">Position: </label>
+                    <input type="text" id="Pos" class="input-group" ><br>
+                    
+                    <label class="label">ID number: </label>
+                    <input type="number" id="idnum" class="input-group" ><br>
+                    
+                    
+                    <label class="label">Rate per day: </label>
+                    <input type="text" id="RPD" class="input-group" ><br>
+                    
+                    <label class="label">Number of days work: </label>
+                    <input type="text" id="NUMBEROFDAYWORK" class="input-group" ><br>
+                    
+                    <label class="label">Rate per hour: </label>
+                    <input type="text" id="RPH" class="input-group" ><br>
+                    
+                    <label class="label">Number of hour work OT: </label>
+                    <input type="text" id="NUMBEROFDAYWORKOT" class="input-group" ><br>
+                    
+                    <label class="label">Over time rate: </label>
+                    <input type="text" id="OTRATE" class="input-group" ><br>
+                    <br>
+                    
+                    <a href="home.html">
+                    <button class="btnBack">Back</button>
+                    </a>
+                    <button id="CALCULATE">Calculate</button>
+
+                    
+                    
+                </div>
+
+                
+            
+        </div>
+
+        <div class="templateTwo">
+            <div class="totalsalary">
+                <h2 class="titletotalSalary">Your total Salary</h2>
+                
+                <h3 id="infoH3">Information:</h3>
+                    <label class="label2" id="name"></label><br><br>
+                    <label class="label2" id="pos"></label><br><br>
+                    <label class="label2" id="id"></label><br><br>
+                <h3 id="incomeH3">Income:</h3><br>
+                    <label class="label2">Rate per day: <span id="rpd"></span></label><br><br>
+                    <!-- <input type="number" class="textValue" id="numrpd"><br> -->
+                    
+                    <label class="label2"># of days work: <span id="nodw"></span></label><br><br>
+                    <!-- <input type="number" class="textValue" id="numnodw"><br> -->
+
+                    <label class="label2"># of days work OT: <span id="nodwOT"></span></label><br><br>
+                    <!-- <input type="number" class="textValue" id="numnohwOT"><br> -->
+
+                    <label class="label2">Over time rate: <span id="otr"></span></label><br>
+                
+                <h3 id="tdeductionH3">Total Deduction:</h3>
+                    <label for="" class="label3">Tax - 80%</label><br><br>
+                    <label for="" class="label3">SSS - 50%</label><br><br>
+                    <label for="" class="label3">Pagibig - 40%</label><br><br>
+                    <label for="" class="label3">Philhealth - 20%</label> <br>
+
+
+                <h3 id="totalH3">Total Net-Income:</h3>
+                   <label for="" class="total" id="totalIncome"></label>
+            
+            </div>
+            
+        </div>
+        
+        
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
